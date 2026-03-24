@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "name": "Sample Lobby Playlist",
+  "global_settings": {
+    "default_duration_seconds": 15,
+    "default_scale_mode": "fit",
+    "loop": true,
+    "keep_screen_awake": true,
+    "refresh_web_on_show": false,
+    "auto_start": false,
+    "transition_delay_ms": 400
+  },
+  "items": [
+    {
+      "id": "sample_web_01",
+      "name": "Company Website",
+      "content_type": "web",
+      "source": "https://www.example.com",
+      "duration_seconds": 20,
+      "enabled": true,
+      "slide_advance_seconds": 5,
+      "scale_mode": null
+    },
+    {
+      "id": "sample_web_02",
+      "name": "BBC News",
+      "content_type": "web",
+      "source": "https://www.bbc.com/news",
+      "duration_seconds": 25,
+      "enabled": true,
+      "slide_advance_seconds": 5,
+      "scale_mode": null
+    },
+    {
+      "id": "sample_img_01",
+      "name": "Sample Image (replace with real path)",
+      "content_type": "image",
+      "source": "C:\\Users\\Public\\Pictures\\sample.jpg",
+      "duration_seconds": 10,
+      "enabled": false,
+      "slide_advance_seconds": 5,
+      "scale_mode": "fit"
+    },
+    {
+      "id": "sample_pdf_01",
+      "name": "Sample PDF (replace with real path)",
+      "content_type": "pdf",
+      "source": "C:\\Users\\Public\\Documents\\report.pdf",
+      "duration_seconds": 30,
+      "enabled": false,
+      "slide_advance_seconds": 5,
+      "scale_mode": null
+    }
+  ]
+}
