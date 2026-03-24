@@ -1,5 +1,5 @@
 """
-Lobby Screen Manager — Entry Point
+Lobby Screen Manager — Entry Point 
 
 A Windows desktop application for corporate lobby displays.
 Cycles through mixed content (web, images, PDFs, Office docs) on a playlist.
@@ -11,6 +11,7 @@ Usage:
 import sys
 import atexit
 import logging
+from pathlib import Path
 
 from app.utils.logging_config import configure_logging
 from app.services.screen_wake import ScreenWake
@@ -31,7 +32,6 @@ def main():
 
     # Load stylesheet
     try:
-        from pathlib import Path
         qss_path = Path(__file__).parent / "resources" / "styles" / "main.qss"
         if qss_path.exists():
             app.setStyleSheet(qss_path.read_text(encoding="utf-8"))
